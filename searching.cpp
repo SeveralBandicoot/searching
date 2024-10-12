@@ -36,8 +36,8 @@ int main() {
 
     bool found = letterSearch(inputString, letter, 0); // call recursive search starting from index of 0
 
-    (found = true) ? void(cout << "Letter '" << letter << "' was found in the string.") :
-      void(cout << "Letter '" << letter << "' was not found in the string.");
+    (found == true) ? cout << "Letter '" << letter << "' was found in the string." :
+      cout << "Letter '" << letter << "' was not found in the string.";
 
     return 0;
 }
